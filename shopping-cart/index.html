@@ -1,0 +1,45 @@
+<!-- index.html -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shopping Cart</title>
+        <link rel="stylesheet" href="styles/main.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Shopping Cart with Discounts</h1>
+
+            <!-- Add Task Form -->
+            <form class="form" id="item-form">
+                <input type="text" id="item-name" placeholder="Item Name" />
+                <input type="text" id="item-price" placeholder="Price" />
+                <input
+                    type="number"
+                    id="item-quantity"
+                    placeholder="Quantity"
+                />
+                <button type="submit">Add Item</button>
+                <input
+                    type="text"
+                    id="item-discount"
+                    placeholder="Discount (%)"
+                />
+                <button id="discount-btn" onclick="applyDiscount()">
+                    Apply Discount
+                </button>
+            </form>
+
+            <!-- Task List -->
+            <div class="item-list">
+                <h2>Cart Items</h2>
+                <div id="items-list"></div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
